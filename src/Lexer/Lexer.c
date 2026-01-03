@@ -158,7 +158,10 @@ TokenArray *Tokenize(const char *Program) {
                 break;
             
             default:
-                fprintf(stderr, "Unknown character: %c\n", Character);
+                if (Character == ' ' || Character == '\t' || Character == '\n' || Character == '\r')
+                    break;
+
+                //fprintf(stderr, "Unknown character: %c\n", Character);
 
                 break;
         }
