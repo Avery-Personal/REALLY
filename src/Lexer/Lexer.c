@@ -15,9 +15,11 @@ const char* TokenName(TokenType Type) {
         case TOKEN_SKIP: return "SKIP";
         case TOKEN_INPUT: return "INPUT";
         case TOKEN_OUTPUT: return "OUTPUT";
+        case TOKEN_NUM_OUTPUT: return "NUM_OUTPUT";
+        //case TOKEN_NUM_B_OUTPUT: return "NUM_B_OUTPUT"; B REGISTER DEBUGGER
         case TOKEN_EOF:return "EOF";
         
-        default:                return "UNKNOWN";
+        default: return "UNKNOWN";
     }
 }
 
@@ -156,6 +158,16 @@ TokenArray *Tokenize(const char *Program) {
                 AddToken(TokenStream, TOKEN_OUTPUT, -1);
 
                 break;
+                
+            case '%':
+                AddToken(TokenStream, TOKEN_NUM_OUTPUT, -1);
+
+                break;
+                
+            //case '!': B REGISTER DEBUGGER
+            //    AddToken(TokenStream, TOKEN_NUM_B_OUTPUT, -1);
+
+            //    break;
             
             default:
                 if (Character == ' ' || Character == '\t' || Character == '\n' || Character == '\r')

@@ -1,0 +1,9 @@
+0 | Zero the A register
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^~ | Increment the A register to 33 and swap with B register
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" | Increment the A register to 72 and output
+@" | Combine the A + B Register, 72 + 33 = 105, and output
+
+ASCII
+
+72 = H
+105 = i 

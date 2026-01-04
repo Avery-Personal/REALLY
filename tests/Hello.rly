@@ -1,0 +1,30 @@
+   Averi Presents
+    HELLO WORLD     
+====================
+
+SET DATA
+0~0 | Zero A/B registers
+^^^^^^~ | Increment A register to 6, swap A and B data
+
+HELLO
+@@@@@@@@@@@@" | Add B register to A register 12 times to get 72, H, and output
+###~@@vvvvvvvvvvvvv" | Subtract the A register by the B register, thrice, A = 54. Swap the A and B registers, A = 6, B = 54, and add B to the A register twice, for 114. Finally, subtract by 13 to get i and output.
+^^^^^^^"" | Increment A register to l, and output twice
+^^^" | Increment A register to 111, o, and output
+
+SET DATA
+0~0 | Zero A/B registers
+^^^^^^~ | Increment A register to 6, swap A and B data
+
+@@@@@^^"0 | Add B register to A register 4 times plus 2 increments to get 32, SPACE, and output. Zero A register.
+
+WORLD
+@@@@@@@@@@@@@@^^^" | Add B register to A register 14 times plus 3 increments to get 87, and output.
+@@@@" | Add B register to A register 4 times to get 111, o, and output.
+^^^" | Increment A register by 3 to get r, and output.
+#" | Subtract B register from A register to get l, and output.
+#vv" | Subtract B register from A register and decrement by 2 to get d, and output.
+0 | Zero A register
+@@@@@^^^" | Add B register to A register 6 times and increment 3 to get 33, !, and output. FINISHED MAKING HELLO WORLD!
+
+This took 1 hour to make, please just start the repo.

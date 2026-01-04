@@ -115,8 +115,11 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    if (Verbose)
+    if (Verbose) {
         printf("Tokenized %zu Tokens\n", Tokens -> Count);
+        
+        PrintTokens(Tokens);
+    }
 
     VM VirtualMachine;
     VM_Initialize(&VirtualMachine, Tokens);

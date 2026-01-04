@@ -1,0 +1,4 @@
+^% | Starts A register at 1 to start loop
+(
+    ^% | Increment A register by 1 and output
+) | Loops back until A = 0

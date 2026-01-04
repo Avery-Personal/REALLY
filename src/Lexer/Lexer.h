@@ -19,6 +19,8 @@ typedef enum {
     TOKEN_SKIP, // ;
     TOKEN_INPUT, // '
     TOKEN_OUTPUT, // "
+    TOKEN_NUM_OUTPUT, // %
+    //TOKEN_NUM_B_OUTPUT, // ! B REGISTER DEBUGGER
 
     TOKEN_EOF, // End of File
 } TokenType;

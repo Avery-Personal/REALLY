@@ -1,0 +1,15 @@
+    ADDITION    
+================
+
+^^^ | Increment the A register to 3
+~^^^^^ | Swap A/B register data and increment A to 5
+@% | Combine both registers and do a numbered output of the A register
+
+0~0 | Zero A/B registers for next code snippet
+
+    SUBTRACTION     
+====================
+
+^^ | Increment the A register to 5
+~^^^^^ | Swap A/B register data and increment A to 5
+#% | Subtract B from A register and do a numbered output of the A register A = 3

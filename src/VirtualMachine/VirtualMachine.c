@@ -40,12 +40,12 @@ void VM_ExecuteToken(VM* VirtualMachine, Token* _Token) {
             break;
         
         case TOKEN_CR:
-            VirtualMachine -> Registers.A += VirtualMachine -> Registers.B;
+            VirtualMachine -> Registers.A = VirtualMachine -> Registers.A + VirtualMachine -> Registers.B;
 
             break;
         
         case TOKEN_SUB:
-            VirtualMachine -> Registers.A -= VirtualMachine -> Registers.B;
+            VirtualMachine -> Registers.A = VirtualMachine -> Registers.A - VirtualMachine -> Registers.B;
 
             break;
         
@@ -92,14 +92,21 @@ void VM_ExecuteToken(VM* VirtualMachine, Token* _Token) {
             break;
         
         case TOKEN_OUTPUT:
-            //char ASCII;
-            //ASCII = (char) VirtualMachine -> Registers.A;
-
-            //printf("%c", ASCII);
-
             printf("%c", (char) VirtualMachine -> Registers.A);
             
             break;
+        
+        
+        case TOKEN_NUM_OUTPUT:
+            printf("%u", VirtualMachine -> Registers.A);
+            
+            break;
+        
+        
+        //case TOKEN_NUM_B_OUTPUT: B REGISTER DEBUGGER
+        //    printf("%u", VirtualMachine -> Registers.B);
+            
+        //    break;
         
         case TOKEN_EOF:
             break;
